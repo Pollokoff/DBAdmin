@@ -2,7 +2,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
 GO
-CREATE PROC [dbo].[WesDemo]
+ALTER PROC [dbo].[WesDemo]
 AS
 
 SELECT 
@@ -14,8 +14,6 @@ PROD,
 DateLastLogErrorImported,
 DOMAIN,
 Purpose,
-Version,
-LocationID,
-DMZ
+Version
 FROM dbo.SQLServers
 GO
