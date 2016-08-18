@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Tally]
+(
+[N] [int] NOT NULL IDENTITY(1, 1)
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Tally] ADD CONSTRAINT [PK_Tally_N] PRIMARY KEY CLUSTERED  ([N]) WITH (FILLFACTOR=100) ON [PRIMARY]
+GO
+GRANT REFERENCES ON  [dbo].[Tally] TO [public]
+GO
+GRANT SELECT ON  [dbo].[Tally] TO [public]
+GO
